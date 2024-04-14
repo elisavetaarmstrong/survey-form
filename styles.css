@@ -1,0 +1,200 @@
+body {
+  background-image: url("neom-i60yUhfWeYI-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #59230e; /* #1b1b32 */
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* The rem unit stands for root em, and is relative to the font size of the html element. */
+
+#title {
+  font-size: 2em;
+  margin: 1em auto;
+  margin-top: 60px;
+  color: #59230e;
+}
+
+#description em {
+  font-size: 1.125rem;
+  margin: 1em auto;
+  color: #59230ea6;
+}
+
+#survey-form {
+  background-color: rgb(182, 96, 49, 0.7);
+  max-width: 100%;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border: none;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#occupation-label,
+#attribute-label {
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 1.125rem;
+  color: whitesmoke;
+  margin-left: 15px;
+}
+
+select {
+  padding: 10px;
+  max-width: 100%;
+  width: 470px;
+  margin: 0 auto;
+  font-size: inherit;
+  border: none;
+  border-radius: 10px;
+}
+
+option {
+  text-align: left;
+}
+
+#name,
+#number,
+#email,
+#textarea {
+  padding: 10px;
+  max-width: 100%;
+  width: 450px;
+  margin: 0 auto;
+  font-size: inherit;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: inset 1px 1px 5px 1px #88888882;
+  /*
+        color: rgb(107, 106, 106);
+        */
+}
+
+#attribute-box,
+#checkbox-list {
+  font-size: 1.125rem;
+  color: whitesmoke;
+  text-align: left;
+  line-height: 2rem;
+}
+
+#submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgb(182, 96, 49, 0.7);
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #59230e;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+#submit:hover {
+  background-color: rgba(80, 34, 9, 0.7);
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
+  }
+
+  #container {
+    margin: 0 auto;
+    width: max-content;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #title {
+    font-size: 1.75em;
+    margin-top: 60px;
+    color: #59230e;
+    margin: 1em auto;
+  }
+
+  #description em {
+    font-size: 1em;
+    color: #59230e;
+    margin: 1em auto;
+  }
+
+  form {
+    background-color: rgb(182, 96, 49, 0.7);
+    max-width: 80%;
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  #name,
+  #number,
+  #email {
+    padding: 10px;
+    max-width: 100%;
+    width: 175px;
+    margin: 0 auto;
+    font-size: inherit;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    /*
+        color: rgb(107, 106, 106);
+        */
+  }
+
+  #textarea {
+    padding: 10px;
+    max-width: 100%;
+    width: 175px;
+    margin: 0 auto;
+    display: flex;
+    font-size: inherit;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    /*
+        color: rgb(107, 106, 106);
+        */
+  }
+
+  select {
+    padding: 10px;
+    max-width: 100%;
+    width: 200px;
+    margin: 0 auto;
+    font-size: inherit;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(182, 96, 49, 0.7);
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    color: #59230e;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}

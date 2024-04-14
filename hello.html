@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form - Freecodecamp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Safari Tour - Survey Form</h1>
+      <p id="description">
+        <em>This is a survey form. To get data. To get your data!</em>
+      </p>
+    </header>
+
+    <!-- The method attribute specifies how to send form-data to the URL specified in the action attribute. 
+        The form-data can be sent via a GET request as URL parameters (with method="get") or via a POST request as data in the request body (with method="post") -->
+
+    <div id="container">
+      <div id="form">
+        <form id="survey-form" action="#" method="post">
+          <!-- Name -->
+          <label id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name here"
+            required />
+
+          <!-- Email -->
+          <label id="email-label" style="margin-top: 25px">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email here"
+            required />
+
+          <!-- Age -->
+          <label id="number-label" style="margin-top: 25px"
+            >Age (optional)</label
+          >
+
+          <input
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="16"
+            max="65" />
+
+          <!-- Dropdown List 1 -->
+          <label id="occupation-label" style="margin-top: 25px"
+            >Which option best describes your current role?</label
+          >
+
+          <select
+            id="dropdown"
+            name="dropdown"
+            placeholder="Select current role">
+            <option value="" disabled selected>Select your role</option>
+            <option value="Occupation-1">Student</option>
+            <option value="Occupation-2">Part-time job</option>
+            <option value="Occupation-3">Full-time job</option>
+            <option value="Occupation-4">Prefer not to say</option>
+            <option value="Occupation-5">Other</option>
+          </select>
+
+          <!-- Radio Select -->
+          <label id="attribute-label" style="margin-top: 25px"
+            >Would you recommend Safari Tour to a friend?
+          </label>
+
+          <div id="attribute-box">
+            <input
+              type="radio"
+              id="attribute"
+              name="attribute"
+              value="definitely"
+              checked
+              required />
+            <label for="definitely">Definitely</label>
+          </div>
+
+          <div id="attribute-box">
+            <input type="radio" id="attribute" name="attribute" value="maybe" />
+            <label for="maybe">Maybe</label>
+          </div>
+
+          <div id="attribute-box">
+            <input
+              type="radio"
+              id="attribute"
+              name="attribute"
+              value="not-sure"
+              required />
+            <label for="not-sure">Not sure</label>
+          </div>
+
+          <!-- Dropdown List 2 -->
+          <label id="occupation-label" style="margin-top: 25px">
+            Overall, how satisfied were you with Safari Tour?
+          </label>
+
+          <select id="dropdown" name="dropdown" placeholder="Select option">
+            <option value="" disabled selected>Select your role</option>
+            <option value="Occupation-1">Great</option>
+            <option value="Occupation-2">Fair</option>
+            <option value="Occupation-3">Bad</option>
+            <option value="Occupation-4">Other</option>
+          </select>
+
+          <!-- Checkbox -->
+          <label id="occupation-label" style="margin-top: 25px"
+            >What would you like to see improved? (Check all that apply)
+          </label>
+
+          <div id="checkbox-list">
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="frontend"
+              value="frontend"
+              checked
+              required />
+            <label for="frontend">The tour schedule</label>
+          </div>
+
+          <div id="checkbox-list">
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="backend"
+              value="backend"
+              required />
+            <label for="backend">The visiting places</label>
+          </div>
+
+          <div id="checkbox-list">
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="datavis"
+              value="datavis"
+              required />
+            <label for="datavis">The train furnitures</label>
+          </div>
+
+          <div id="checkbox-list">
+            <input
+              type="checkbox"
+              id="checkbox"
+              name="addtional"
+              value="addtional"
+              required />
+            <label for="addtional">The destination</label>
+          </div>
+
+          <!-- Textarea -->
+          <label id="occupation-label" style="margin-top: 25px"
+            >Any comments or suggestions?
+          </label>
+
+          <textarea
+            id="textarea"
+            name="message"
+            rows="10"
+            cols="30"
+            placeholder="I'm glad you came..."></textarea>
+
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
